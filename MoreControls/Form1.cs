@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace MoreControls
 {
-    public partial class Form1 : Form
+    public partial class MoreControl : Form
     {
-        public Form1()
+        public MoreControl()
         {
             InitializeComponent();
         }
 
+        private void HsbNumber_Scroll(object sender, ScrollEventArgs e)
+        {
+            TxtNumber.Text = HsbNumber.Value.ToString();
+        }
     }
 }
